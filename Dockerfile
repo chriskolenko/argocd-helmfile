@@ -14,7 +14,7 @@ RUN apt-get update && \
         nano && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
-    curl -o /usr/local/bin/sops -L https://github.com/mozilla/sops/releases/download/3.5.0/sops-3.5.0.linux && \
+    curl -o /usr/local/bin/sops -L https://github.com/mozilla/sops/releases/download/v3.5.0/sops-v3.5.0.linux && \
     curl -o /usr/local/bin/helmfile -L https://github.com/roboll/helmfile/releases/download/v0.98.1/helmfile_linux_amd64 && \
     chmod +x /usr/local/bin/helmfile && \
     chmod +x /usr/local/bin/sops
